@@ -6,9 +6,7 @@ psp... ALL=(ALL) NOPASSWD: ALL
 
 sudo sed -i -- 's/=enforcing/=disabled/g' /etc/selinux/config;cat /etc/selinux/config
 
-
-
-#gnome terminal
+<b>#gnome terminal</b>
 
 gsettings get org.gnome.Terminal.ProfilesList default
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/ default-size-columns 140
