@@ -31,6 +31,9 @@ https://rpmfusion.org/Configuration
 
 sudo dnf -y install gnome-shell gnome-terminal gnome-software gnome-tweaks
 sudo dnf -y install gnome-disk-utility eog nautilus xdg-user-dirs xdg-user-dirs-gtk chrome-gnome-shell
+
+xdg-user-dirs-update
+
 sudo dnf -y install midori zip tar terminator binutils tumbler gedit meld pciutils vim 
 
 sudo dnf -y install @c-development
@@ -40,8 +43,6 @@ sudo dnf -y install code
 sudo dnf -y install minecraft-launcher
 sudo dnf -y install f33-backgrounds-extras-gnome f33-backgrounds-gnome
 
-xdg-user-dirs-update
-
 <b># Chrome</b>
 
 sudo dnf -y install fedora-workstation-repositories
@@ -50,7 +51,6 @@ sudo dnf -y install google-chrome-stable
 
 <b># Turn off Alert</b>
 dconf write /org/gnome/desktop/sound/event-sounds "false"
-
 
 <b># Github website</b>
 
