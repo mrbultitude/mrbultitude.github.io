@@ -1,5 +1,13 @@
 <pre>
 
+
+sudo dnf -y install gnome-shell gnome-terminal gnome-software gnome-tweaks
+sudo dnf -y install gnome-disk-utility eog nautilus xdg-user-dirs xdg-user-dirs-gtk chrome-gnome-shell
+
+xdg-user-dirs-update
+
+sudo dnf -y install midori zip tar terminator binutils tumbler gedit meld pciutils vim 
+
 su
 visudo
 psp... ALL=(ALL) NOPASSWD: ALL
@@ -28,13 +36,6 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 <b># Installs</b>
 
 https://rpmfusion.org/Configuration
-
-sudo dnf -y install gnome-shell gnome-terminal gnome-software gnome-tweaks
-sudo dnf -y install gnome-disk-utility eog nautilus xdg-user-dirs xdg-user-dirs-gtk chrome-gnome-shell
-
-xdg-user-dirs-update
-
-sudo dnf -y install midori zip tar terminator binutils tumbler gedit meld pciutils vim 
 
 sudo dnf -y install @c-development
 sudo dnf -y install @development-tools
