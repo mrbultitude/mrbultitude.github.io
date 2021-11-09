@@ -2,11 +2,9 @@
 
 
 sudo dnf -y install gnome-shell gnome-terminal gnome-software gnome-tweaks gnome-screenshot gnome-calculator gnome-extensions-app
-sudo dnf -y install gnome-disk-utility eog nautilus xdg-user-dirs xdg-user-dirs-gtk chrome-gnome-shell
+sudo dnf -y install gnome-disk-utility eog nautilus
 
-xdg-user-dirs-update
-
-sudo dnf -y install midori zip tar terminator binutils tumbler gedit meld pciutils usbutils vim 
+sudo dnf -y install midori zip tar terminator binutils tumbler gedit meld pciutils usbutils
 
 su
 visudo
@@ -39,6 +37,7 @@ https://rpmfusion.org/Configuration
 
 sudo dnf -y install @c-development
 sudo dnf -y install @development-tools
+sudo dnf -y install micro
 
 sudo dnf -y install code
 sudo dnf -y install minecraft-launcher
@@ -48,7 +47,7 @@ sudo dnf -y install f33-backgrounds-extras-gnome f33-backgrounds-gnome
 
 sudo dnf -y install fedora-workstation-repositories
 sudo dnf config-manager --set-enabled google-chrome
-sudo dnf -y install google-chrome-stable
+sudo dnf -y install google-chrome-stable chrome-gnome-shell
 
 <b># Turn off Alert</b>
 dconf write /org/gnome/desktop/sound/event-sounds "false"
