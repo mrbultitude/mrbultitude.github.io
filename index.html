@@ -3,8 +3,7 @@
 
 sudo dnf -y install gnome-shell gnome-terminal gnome-software gnome-tweaks gnome-screenshot gnome-calculator gnome-extensions-app
 sudo dnf -y install gnome-disk-utility eog nautilus
-
-sudo dnf -y install midori zip tar terminator binutils tumbler gedit meld pciutils usbutils
+sudo dnf -y install midori zip tar terminator binutils tumbler gedit meld pciutils usbutils lynx
 
 su
 visudo
@@ -34,14 +33,13 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 <b># Installs</b>
 
 https://rpmfusion.org/Configuration
+lynx https://rpmfusion.org/Configuration -dump -width=1000 | grep dnf| grep fedora | grep nonfree
 
 sudo dnf -y install @c-development
 sudo dnf -y install @development-tools
 sudo dnf -y install micro
 
-sudo dnf -y install code
-sudo dnf -y install minecraft-launcher
-sudo dnf -y install f33-backgrounds-extras-gnome f33-backgrounds-gnome
+### TODO  sudo dnf -y install minecraft-launcher
 
 <b># Chrome</b>
 
@@ -55,12 +53,6 @@ dconf write /org/gnome/desktop/sound/event-sounds "false"
 <b># Github website</b>
 
 git clone git@github.com:mrbultitude/mrbultitude.github.io.git
-
-linux   https://browser.geekbench.com/v5/cpu/11686798
-macos   https://browser.geekbench.com/v5/cpu/11687003
-
-macos gpu compute   https://browser.geekbench.com/v5/compute/3933888
-linux gpu compute   https://browser.geekbench.com/v5/compute/3933937
 
 </pre>
 
