@@ -3,7 +3,7 @@
 
 sudo dnf -y install gnome-shell gnome-terminal gnome-software gnome-tweaks gnome-screenshot gnome-calculator gnome-extensions-app
 sudo dnf -y install gnome-disk-utility eog nautilus
-sudo dnf -y install midori zip tar terminator binutils tumbler gedit meld pciutils usbutils lynx rsync
+sudo dnf -y install midori zip tar terminator binutils tumbler gedit meld pciutils usbutils lynx rsync micro
 
 su
 visudo
@@ -11,8 +11,9 @@ psp... ALL=(ALL) NOPASSWD: ALL
 
 sudo sed -i -- 's/=enforcing/=disabled/g' /etc/selinux/config;cat /etc/selinux/config
 
-sudo dnf -y groupinstall "Development Tools"
-sudo dnf -y groupinstall "C Development Tools and Libraries"
+sudo dnf -y install @c-development
+sudo dnf -y install @development-tools
+
 
 <b>#gnome terminal</b>
 
@@ -37,10 +38,6 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 
 https://rpmfusion.org/Configuration
 lynx https://rpmfusion.org/Configuration -dump -width=1000 | grep dnf| grep fedora | grep nonfree
-
-sudo dnf -y install @c-development
-sudo dnf -y install @development-tools
-sudo dnf -y install micro
 
 ### TODO  sudo dnf -y install minecraft-launcher
 
