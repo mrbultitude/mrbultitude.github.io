@@ -45,7 +45,7 @@ lynx https://rpmfusion.org/Configuration -dump -width=1000 | grep dnf| grep fedo
 
 sudo dnf -y install fedora-workstation-repositories
 sudo dnf config-manager --set-enabled google-chrome
-sudo dnf -y install google-chrome-stable chrome-gnome-shell gnome-browser-connector
+sudo dnf -y install google-chrome-stable gnome-browser-connector
 
 <b># Turn off Alert</b>
 dconf write /org/gnome/desktop/sound/event-sounds "false"
