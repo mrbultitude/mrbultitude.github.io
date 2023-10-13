@@ -11,6 +11,9 @@ psp... ALL=(ALL) NOPASSWD: ALL
 
 sudo sed -i -- 's/=enforcing/=disabled/g' /etc/selinux/config;cat /etc/selinux/config
 
+sudo dnf -y groupinstall "Development Tools"
+sudo dnf -y groupinstall "C Development Tools and Libraries"
+
 <b>#gnome terminal</b>
 
 gsettings get org.gnome.Terminal.ProfilesList default
