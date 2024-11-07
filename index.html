@@ -45,7 +45,7 @@ lynx https://rpmfusion.org/Configuration -dump -width=1000 | grep dnf| grep fedo
 <b># Chrome</b>
 
 sudo dnf -y install fedora-workstation-repositories
-sudo dnf config-manager --set-enabled google-chrome
+sudo dnf config-manager setopt google-chrome.enabled=1
 sudo dnf -y install google-chrome-stable gnome-browser-connector
 
 <b># Turn off Alert</b>
